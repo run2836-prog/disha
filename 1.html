@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>250 x 250 · naya style | center ad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1e2b3a;  /* dark background for strong pop */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', 'Segoe UI', BlinkMacSystemFont, sans-serif;
+            padding: 20px;
+        }
+
+        /* fresh ad container – still exactly 250x250 */
+        .ad-box {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle at 30% 20%, #f9e79f, #f7dc6f);
+            background: radial-gradient(circle at 70% 80%, #fad0c4, #f7b731); /* warm gradient */
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: 
+                0 20px 30px -10px rgba(0,0,0,0.6),
+                0 0 0 3px #fff3e0 inset,
+                0 0 0 5px rgba(255,215,130,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            transition: all 0.25s ease;
+            border: 2px solid #ffd966;
+        }
+
+        .ad-box:hover {
+            box-shadow: 
+                0 25px 40px -8px black,
+                0 0 0 4px #ffe9b6 inset,
+                0 0 0 7px rgba(255, 200, 70, 0.5);
+            transform: rotate(0.5deg) scale(1.02);
+            border-color: #f1c40f;
+        }
+
+        /* main headline – desi touch + bold */
+        .big-text {
+            font-size: 33px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #2c3e50;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 #fef9e7, 5px 5px 0 rgba(0,0,0,0.1);
+            letter-spacing: -0.5px;
+            margin-top: -5px;
+            transform: rotate(-1deg);
+            background: linear-gradient(145deg, #1e2b3a, #2c3e50);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-stroke: 1.5px #f6e58d;  /* outline style */
+            text-stroke: 1.5px #f6e58d;
+            color: transparent;
+        }
+
+        /* "250" big style */
+        .big-text span {
+            display: block;
+            font-size: 52px;
+            margin: -8px 0 -15px;
+            color: #2d3e5f;
+            text-shadow: 0 4px 0 #ffe08c, 0 8px 10px rgba(0,0,0,0.2);
+            -webkit-text-stroke: 2px #ffd966;
+        }
+
+        /* Multiplication chip */
+        .multi-chip {
+            background: #212f3f;
+            color: #f7dc6f;
+            padding: 6px 14px;
+            border-radius: 60px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin: 10px 0 6px;
+            border: 2px solid #f1c40f;
+            box-shadow: 0 4px 0 #9a5e1a, 0 6px 12px black;
+            transform: rotate(0.5deg);
+        }
+
+        /* result highlight – like real ad */
+        .result-badge {
+            background: #1e2b3a;
+            padding: 7px 20px;
+            border-radius: 50px;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            border: 2px solid gold;
+            box-shadow: 0 3px 0 #b87c10, 0 6px 10px rgba(0,0,0,0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 5px 0 2px;
+        }
+
+        .result-badge span {
+            color: #f9e75c;
+            font-size: 27px;
+            margin-right: 5px;
+            filter: drop-shadow(0 2px 2px black);
+        }
+
+        .small-print {
+            font-size: 10px;
+            font-weight: 500;
+            color: #2e3f4e;
+            background: #f7dc6f;
+            padding: 3px 16px;
+            border-radius: 40px;
+            margin-top: 6px;
+            border: 1px solid white;
+            font-weight: 600;
+            text-transform: uppercase;
+            box-shadow: inset 0 1px 4px white, 0 2px 0 #ab7719;
+        }
+
+        /* extra sparkle (desi tadka) */
+        .ad-box::before {
+            content: "★";
+            position: absolute;
+            top: 10px;
+            left: 18px;
+            font-size: 24px;
+            color: #fffacd;
+            text-shadow: 0 0 5px darkorange, 2px 2px 0 #b5651e;
+            opacity: 0.8;
+            transform: rotate(-10deg);
+        }
+
+        .ad-box::after {
+            content: "⚡";
+            position: absolute;
+            bottom: 16px;
+            right: 18px;
+            font-size: 32px;
+            color: #f1c40f;
+            text-shadow: 0 0 8px #f39c12, 2px 3px 0 #784e0e;
+            transform: rotate(10deg);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        bilkul center me 250x250 ad 
+        "250 MULTIPLICATION 250" naye andaaz mein 
+    -->
+    <div class="ad-box" aria-label="ad: 250 multiplication 250">
+        <!-- main text: 250 (big) + MULTIPLICATION + 250 (big) -->
+        <div class="big-text">
+            <span>250</span>
+            MULTIPLICATION
+            <span>250</span>
+        </div>
+
+        <!-- stylish chip between numbers -->
+        <div class="multi-chip">❌  गुना  ❌</div>
+
+        <!-- result wala part (ad ka core) -->
+        <div class="result-badge">
+            <span>➡️</span> 62,500 <span>⬅️</span>
+        </div>
+
+        <!-- micro tagline -->
+        <div class="small-print">बिल्कुल सही · perfect square</div>
+    </div>
+</body>
+</html>
